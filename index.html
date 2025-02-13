@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="login-container">
+            <h1>LINX LOGIN</h1>
+            <img src="linxretail_logo-removebg-preview.png" width="80px">
+            <form id="loginForm">
+            <label for="username"></label>
+            <input type="text" placeholder="Usuário" id="username" required>
+            <label for="password"></label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="••••••" inputmode="numeric" pattern="[0-9]*" required>
+                <button type="button" id="togglePassword"><span class="material-symbols-outlined">visibility_off</span></button>
+            </div>
+            <div id="cinco">
+                <button class="inAndOut" type="button" id="logout">SAIR</button>
+                <button class="inAndOut" type="submit" id="login">ENTRAR</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+    <script src="file.js"></script>
+</body>
+</html>

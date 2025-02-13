@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-image: url(Nova_Br_mania.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Noto Sans", serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#login-container{
+    position: relative;
+    background-color: hsla(0, 0%, 100%, 0.692);
+    width: 600px;
+    border: 1px solid black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 4px;
+}
+input{
+    border: 2px solid black;
+    width: 300px;
+    height: 40px;
+}
+.inAndOut{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#logout{
+    color: white;
+    background-color: orange;
+}
+#login{
+    color: white;
+    background-color: blueviolet;
+}
+#logout:hover{
+    color: white;
+    background-color: hsl(39, 100%, 45%);
+}
+#login:hover{
+    color: white;
+    background-color: hsl(271, 76%, 45%);
+}
+#cinco{
+    display: flex;
+    position: relative;
+    top: 50px;
+    gap: 50px;
+}
+h1{
+    font-weight: 300;
+    color: black;
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 308px; 
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px; 
+    border: 2px solid black;
+    height: 40px;
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    top: 10px;
+}
+hr{
+    width: 100%;
+}
