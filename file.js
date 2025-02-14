@@ -12,3 +12,6 @@ document.getElementById("togglePassword").addEventListener("click", function(){
         icon.textContent = "visibility_off"; 
     }
 })
+function fecharPagina() {
+    window.open('', '_self').close();
+}
