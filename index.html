@@ -13,23 +13,45 @@
 <body>
     <div id="container">
         <div id="login-container">
-            <h1>LINX LOGIN</h1>
-            <img src="linxretail_logo-removebg-preview.png" width="80px">
+            <img id="linx" alt="logo" src="linxretail_logo-removebg-preview.png">
+            <h1>Produto licensiado para:</h1><h4>IGOR JFS LOJA DE CONVENIENCIA<br>12.345.678/9001-10</h4>
+            
+            
             <form id="loginForm">
-            <label for="username"></label>
-            <input type="text" placeholder="Usuário" id="username" required>
-            <label for="password"></label>
+                <div class="input-container">
+                    <input type="text" id="username" placeholder="Usuário" required>
+                    <label for="username"></label>
+                </div>
             <div class="password-container">
-                <input type="password" id="password" name="password" placeholder="••••••" inputmode="numeric" pattern="[0-9]*" required>
+            <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Senha" inputmode="numeric" pattern="[0-9]*" required>
                 <button type="button" id="togglePassword"><span class="material-symbols-outlined">visibility_off</span></button>
             </div>
-            <div id="cinco">
-                <button class="inAndOut" type="button" id="logout">SAIR</button>
+            <div id="outAndIn">
+                <button onclick="fecharPagina()" class="inAndOut" type="button" id="logout">SAIR</button>
                 <button class="inAndOut" type="submit" id="login">ENTRAR</button>
             </div>
         </form>
         </div>
     </div>
+    <footer>
+        <div id="foot1"><h1>Linx PDV Facil</h1><h3>VERSÃO 2.0.0.26</h3></div>
+        <div id="foot2">
+            <span id="pc" class="material-symbols-outlined">
+                connected_tv
+                </span>
+            <div id="remote">
+                <a href="#">Linx Remoto</a>
+            </div>
+            <div id="copyright">
+                <p>© 1999-2025 Grupo Linx</p>
+                <p>Todos os direitos reservados</p>
+                <p><a href="https://www.linx.com.br">www.linx.com.br</a></p>
+            </div>
+            <img id="footer-logo" alt="linx-logo" src="linxretail_logo-removebg-preview.png" width="40px" >
+        </div>
+        
+    </footer>
 
 
     <script src="file.js"></script>
